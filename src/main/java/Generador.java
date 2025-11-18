@@ -51,12 +51,39 @@ public class Generador {
         }
         return psswds;
     }
+    // Método para indicar el nivel de seguridad de la contraseña
+    public static void indicadorSeguridad(int nivel) {
+        if (nivel == 3) {
+            System.out.println("Nivel de seguridad: Fuerte.");
+        } else if (nivel == 2) {
+            System.out.println("Nivel de seguridad: Media.");
+        } else {
+            System.out.println("Nivel de seguridad: Débil.");
+
+        }
+    }
+
+    public static void validarContrasena(String msj) {
+        System.out.println("\nFaltan los siguientes requisitos:");
+
+        if (!msj.matches(".*[A-Z].*")) {
+            System.out.println("- Letra mayúscula");
+        }
+        if (!msj.matches(".*[a-z].*")) {
+            System.out.println("- Letra minúscula");
+        }
+        if (!msj.matches(".*[0-9].*")) {
+            System.out.println("- Número");
+        }
+        if (!msj.matches(".*[.,*].*")) {
+            System.out.println("- Carácter especial (. , o *)");
+        }
+    }
 
     // Método principal para probar el generador de mensajes
     public static void main(String[] args) {
-        System.out.println("=== Generador de Mensajes ===\n");
+        System.out.println("=== (Prueba) Generador de Contrasena ===\n");
 
-        // Generar y mostrar 10 mensajes de ejemplo
             String psswd = generarContrasena();
             System.out.println(psswd);
     }

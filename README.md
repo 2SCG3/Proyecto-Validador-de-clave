@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Proyecto Algoritmos
 
 A small Java project for learning and implementing algorithms.
@@ -41,6 +42,8 @@ mvn test
 2. Add your test classes to `src/test/java/`
 3. Build and run using Maven commands above
 =======
+=======
+>>>>>>> 7b10384f03913513635079dcd1f53ccf26dd6b58
 # Proyecto-Validador-de-clave
 Proyecto hecho por estudiantes para validar clave.
 
@@ -68,4 +71,7 @@ Mariana Del Mar Beltran Nunez
 ## Licencia
 
 Especifica la licencia si aplica.
+<<<<<<< HEAD
+>>>>>>> 7b10384f03913513635079dcd1f53ccf26dd6b58
+=======
 >>>>>>> 7b10384f03913513635079dcd1f53ccf26dd6b58
